@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janak Kandel- Portfolio</title>
+    <meta name="description" content="Janak Kandel is a Student" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i
+        id="hamburger"
+        class="fa-solid fa-bars sidebar_hamburger sidebar_hamburger_translate"
+      ></i>
+      <div class="sidebar_content">
+        <ul>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <h1>
+        Hi! <br />
+        I am Janak, <br />
+        I am a Student
+      </h1>
+      <p>Electronics, Communication and Information Engineer</p>
+      <button class="hero__btn">
+        Contact me <i class="fa-solid fa-envelope"></i>
+      </button>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section_title">About me</p>
+      <p class="section_subtitle">Who am I?</p>
+
+      <p class="about_description">
+        <strong>Hi, I am Janak.</strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio
+        commodi laudantium consequatur quas doloremque? Blanditiis magni nulla
+        nisi maiores rerum. Laborum atque nihil voluptatibus quis unde, ab ullam
+        tenetur!
+      </p>
+      <div class="about_skills">
+        <div>
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Web development</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h3>Web Design</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile Apllication</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section_title">My Speciality</p>
+      <p class="section_subtitle">My Skills</p>
+
+      <div class="outerbox">
+        <div class="skill_box">
+          <p>HTML</p>
+          <div class="skill_grey_box">
+            <div class="skill_color_box">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>CSS</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: red; background: red; width: 30%"
+            >
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>PYTHON</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: cyan; background: cyan; width: 40%"
+            >
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>JAVASCRIPT</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: green; background: green; width: 20%"
+            >
+              <span>20%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>MATLAB</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: yellow; background: yellow; width: 30%"
+            >
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>C</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: purple; background: purple; width: 50%"
+            >
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+    </script>
+  </body>
+</html>
